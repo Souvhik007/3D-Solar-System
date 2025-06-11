@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+h1 {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 1.2rem;
+  z-index: 2;
+}
+canvas {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+.controls {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  z-index: 3;
+  background-color: rgba(0,0,0,0.4);
+  padding: 10px;
+  border-radius: 8px;
+}
+.controls label {
+  font-size: 0.8rem;
+  display: block;
+  margin-bottom: 5px;
+}
+.controls input[type=range] {
+  width: 150px;
+}
+.pause-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 3;
+  background: #222;
+  color: #fff;
+  border: 1px solid #555;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
