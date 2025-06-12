@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> cda73fead149926b5f6e9a35ede6c6f4cc6f3fef
-
 // === 🌠 Scene setup
 const scene = new THREE.Scene();
 
@@ -45,26 +40,20 @@ scene.add(sun);
 
 // === 🌍 Real Planet Colors
 const planetColors = [
-  0xb1b1b1, // Mercury - Gray
-  0xe5c07b, // Venus - Pale Yellowish
-  0x2e70ff, // Earth - Blue
-  0xc1440e, // Mars - Reddish
-  0xd2b48c, // Jupiter - Tan
-  0xf5deb3, // Saturn - Pale Yellow
-  0x7fffd4, // Uranus - Cyan
-  0x4169e1  // Neptune - Deep Blue
+  0xb1b1b1, // Mercury
+  0xe5c07b, // Venus
+  0x2e70ff, // Earth
+  0xc1440e, // Mars
+  0xd2b48c, // Jupiter
+  0xf5deb3, // Saturn
+  0x7fffd4, // Uranus
+  0x4169e1  // Neptune
 ];
 
 const planetNames = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
 const orbitColors = [
-  0x999999, // Mercury
-  0xffcc00, // Venus
-  0x3399ff, // Earth
-  0xff3300, // Mars
-  0xff9966, // Jupiter
-  0xffcc99, // Saturn
-  0x66ffff, // Uranus
-  0x3333ff  // Neptune
+  0x999999, 0xffcc00, 0x3399ff, 0xff3300,
+  0xff9966, 0xffcc99, 0x66ffff, 0x3333ff
 ];
 
 // === 🪐 Planets and orbits
@@ -83,11 +72,10 @@ for (let i = 0; i < 8; i++) {
   planets.push({ mesh: planet, distance: 10 + i * 5 });
   orbitSpeeds.push(0.01 + i * 0.002);
 
-  // 🎨 Each orbit → one separate colored circle with a unique distance
   const orbitGeometry = new THREE.BufferGeometry();
   const segments = 150;
   const points = [];
-  const radius = 10 + i * 5; // ← DIFFERENT RADIUS for EACH orbit
+  const radius = 10 + i * 5;
   for (let j = 0; j <= segments; j++) {
     const theta = (j / segments) * Math.PI * 2;
     points.push(Math.cos(theta) * radius, 0, Math.sin(theta) * radius);
