@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> cda73fead149926b5f6e9a35ede6c6f4cc6f3fef
 
 // === 🌠 Scene setup
 const scene = new THREE.Scene();
