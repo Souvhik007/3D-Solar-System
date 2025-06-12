@@ -22,7 +22,7 @@ canvas {
   top: 50px;
   left: 20px;
   z-index: 3;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 10px;
   border-radius: 8px;
 }
@@ -31,7 +31,7 @@ canvas {
   display: block;
   margin-bottom: 5px;
 }
-.controls input[type=range] {
+.controls input[type="range"] {
   width: 150px;
 }
 .pause-btn {
