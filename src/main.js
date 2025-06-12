@@ -1,4 +1,3 @@
-import * as THREE from 'three';
 
 // === 🌠 Scene setup
 const scene = new THREE.Scene();
